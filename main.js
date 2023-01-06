@@ -1,19 +1,18 @@
-var number = prompt('Summani kiriting');
-var elStyle = document.querySelector('.site-title')
+var userName = prompt('Ismingizni kiriting')
+var number = prompt('Pul miqdorini kiriting');
 var Ticket = 500;
 var Hotel = 250;
 var Museum = 120;
-var amount = (Hotel + Ticket) * dollartosum ;
-var eurotosum = 11686;
-var dollartosum = 11225;
-var euro = Museum * eurotosum;
-var price = dollartosum + eurotosum;
+var euro_to_sum = 11894;
+var dollar_to_sum = 11328;
+var amount = (Hotel + Ticket) * dollar_to_sum ;
+var euro = Museum * euro_to_sum;
+var price = dollar_to_sum + euro_to_sum; 
 
 
 if (number >= price) {
-  elStyle.textContent = "Oq yo'l Alisher 👌 ";
+  console.log ( userName + ' ' + "Safar uchun pulingiz yetarli 👍");
 } 
-
-else {
-  elStyle.textContent = "Alisher, ozgina sabr qilish kerak bo'lar ekan   ";
+else if (number < amount) {
+  console.log( userName + ' ' +  "Safar uchun pulingiz yetarli emas.");
 }
